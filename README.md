@@ -84,16 +84,6 @@ The dataset contains various health and demographic metrics that are key in unde
 
 ---
 
-## Screenshots
-
-### Dashboard Overview  
-![Dashboard Overview](https://via.placeholder.com/800x400?text=Dashboard+Overview)
-
-### Exploratory Data Analysis  
-![EDA](https://via.placeholder.com/800x400?text=EDA+Page)
-
-### Machine Learning Model  
-![ML Model](https://via.placeholder.com/800x400?text=ML+Model)
 
 ---
 
