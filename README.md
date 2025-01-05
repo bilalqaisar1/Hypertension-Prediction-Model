@@ -1,8 +1,6 @@
 
 # Hypertension Dataset Analysis Dashboard
 
-![Hypertension Analysis Banner](https://via.placeholder.com/800x300?text=Hypertension+Dataset+Dashboard)
-
 This project is an **interactive web-based dashboard** for exploring and analyzing a hypertension dataset using Python. It includes advanced data visualization, exploratory data analysis (EDA), correlation analysis, and machine learning model predictions.
 
 ---
