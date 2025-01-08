@@ -53,13 +53,17 @@ st.markdown("""
     }
 
     .stApp > header::before {
-        content: 'IDS-PROJECT';
+        content: 'HYPERTENSION PREDICTION SYSTEM';
         display: block;
         color: white;
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-align: center;
         padding: 10px 0;
         margin-top: -15px;
+        font-family: 'Helvetica Neue', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        letter-spacing: 1px;
+        font-weight: 600;
     }
 
     h1, h2, h3, h4 {
@@ -923,100 +927,6 @@ def main():
         ):
             st.session_state.current_page = page
             st.rerun()
-
-    # Only copyright section
-    st.sidebar.markdown("""
-        <style>
-        .copyright-container {
-            position: fixed;
-            bottom: 20px;
-            left: 0;
-            width: 220px;
-            padding: 15px 0;
-            background: linear-gradient(
-                135deg, 
-                rgba(255, 255, 255, 0.1), 
-                rgba(255, 255, 255, 0.05)
-            );
-            backdrop-filter: blur(10px);
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .copyright-text {
-            font-family: 'Helvetica Neue', sans-serif;
-            font-size: 11px;
-            font-weight: 500;
-            color: rgba(255, 255, 255, 0.9);
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 4px;
-        }
-
-        .copyright-icon {
-            font-size: 12px;
-            animation: pulse 2s infinite;
-        }
-
-        .copyright-year {
-            color: #F4D03F;
-            font-weight: 600;
-        }
-
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-                opacity: 0.8;
-            }
-            50% {
-                transform: scale(1.1);
-                opacity: 1;
-            }
-            100% {
-                transform: scale(1);
-                opacity: 0.8;
-            }
-        }
-
-        .copyright-container:hover {
-            background: linear-gradient(
-                135deg, 
-                rgba(255, 255, 255, 0.15), 
-                rgba(255, 255, 255, 0.08)
-            );
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .copyright-container:hover .copyright-text {
-            color: rgba(255, 255, 255, 1);
-        }
-
-        @media (max-width: 768px) {
-            .copyright-container {
-                width: 100%;
-                padding: 10px 0;
-            }
-            .copyright-text {
-                font-size: 10px;
-            }
-        }
-        </style>
-
-        <div class="copyright-container">
-            <p class="copyright-text">
-                <span class="copyright-icon">©</span>
-                <span class="copyright-year">2024</span>
-                All Rights Reserved
-            </p>
-        </div>
-    """, unsafe_allow_html=True)
 
     # Display current page
     pages[st.session_state.current_page]()
